@@ -1,0 +1,265 @@
+[
+  {
+    "id": "brk-b3zrm-001",
+    "brand": "Berkeley",
+    "model": "B3ZRM (Centrifugal)",
+    "description": "High-head agricultural irrigation pump, cast iron.",
+    "impeller_diameter_mm": 343,
+    "rpm": 1750,
+    "curves": {
+      "head": { "a": 55.0, "b": -0.02, "c": -0.0006 },
+      "bep": { "q_bep": 175, "eff_bep": 78, "shape_factor": 0.35 }
+    },
+    "limits": { "max_flow_m3h": 250, "max_head_m": 55, "min_flow_m3h": 45 },
+    "image": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/berkeley-b-series.png",
+    "catalog_link": "https://www.pentair.com/en-us/products/business-industry/water-supply-disposal/pumps/berkeley-b-series.html"
+  },
+  {
+    "id": "grun-cr90-002",
+    "brand": "Grundfos",
+    "model": "CR 95-3-2 (Vertical Multistage)",
+    "description": "Vertical multistage efficient pump for high pressure systems.",
+    "impeller_diameter_mm": "N/A",
+    "rpm": 3500,
+    "curves": {
+      "head": { "a": 104.0, "b": -0.11, "c": -0.002 },
+      "bep": { "q_bep": 95, "eff_bep": 74, "shape_factor": 0.38 }
+    },
+    "limits": { "max_flow_m3h": 150, "max_head_m": 104, "min_flow_m3h": 22 },
+    "image": "https://product-selection.grundfos.com/assets/images/products/cr/cr-90.jpg",
+    "catalog_link": "https://product-selection.grundfos.com/us"
+  },
+  {
+    "id": "corn-4rb-003",
+    "brand": "Cornell",
+    "model": "4RB (End Suction)",
+    "description": "Standard irrigation pump, robust solids handling.",
+    "impeller_diameter_mm": 254,
+    "rpm": 1800,
+    "curves": {
+      "head": { "a": 36.5, "b": 0.013, "c": -0.0009 },
+      "bep": { "q_bep": 135, "eff_bep": 76, "shape_factor": 0.35 }
+    },
+    "limits": { "max_flow_m3h": 200, "max_head_m": 37, "min_flow_m3h": 34 },
+    "image": "https://www.cornellpump.com/wp-content/uploads/2020/05/4RB.png",
+    "catalog_link": "https://www.cornellpump.com/products/clear-liquid-pumps/"
+  },
+  {
+    "id": "brk-b4zrm-004",
+    "brand": "Berkeley",
+    "model": "B4ZRM (High Flow)",
+    "description": "High-flow agricultural irrigation pump for large systems.",
+    "impeller_diameter_mm": 381,
+    "rpm": 1750,
+    "curves": {
+      "head": { "a": 45.0, "b": -0.008, "c": -0.00035 },
+      "bep": { "q_bep": 245, "eff_bep": 80, "shape_factor": 0.32 }
+    },
+    "limits": { "max_flow_m3h": 350, "max_head_m": 45, "min_flow_m3h": 80 },
+    "image": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/berkeley-b-series.png",
+    "catalog_link": "https://www.pentair.com/en-us/products/business-industry/water-supply-disposal/pumps/berkeley-b-series.html"
+  },
+  {
+    "id": "grun-cr45-005",
+    "brand": "Grundfos",
+    "model": "CR 45-2 (Vertical Multistage)",
+    "description": "Medium capacity vertical multistage pump.",
+    "impeller_diameter_mm": "N/A",
+    "rpm": 3500,
+    "curves": {
+      "head": { "a": 68.0, "b": -0.15, "c": -0.004 },
+      "bep": { "q_bep": 58, "eff_bep": 72, "shape_factor": 0.40 }
+    },
+    "limits": { "max_flow_m3h": 90, "max_head_m": 68, "min_flow_m3h": 15 },
+    "image": "https://product-selection.grundfos.com/assets/images/products/cr/cr-45.jpg",
+    "catalog_link": "https://product-selection.grundfos.com/us"
+  },
+  {
+    "id": "corn-6rb-006",
+    "brand": "Cornell",
+    "model": "6RB (End Suction)",
+    "description": "Large capacity irrigation pump with excellent efficiency.",
+    "impeller_diameter_mm": 305,
+    "rpm": 1800,
+    "curves": {
+      "head": { "a": 42.0, "b": 0.005, "c": -0.0005 },
+      "bep": { "q_bep": 195, "eff_bep": 79, "shape_factor": 0.33 }
+    },
+    "limits": { "max_flow_m3h": 280, "max_head_m": 42, "min_flow_m3h": 50 },
+    "image": "https://www.cornellpump.com/wp-content/uploads/2020/05/6RB.png",
+    "catalog_link": "https://www.cornellpump.com/products/clear-liquid-pumps/"
+  },
+  {
+    "id": "rain-r50-007",
+    "brand": "Rainbird",
+    "model": "R50-5HP (Turf Pump)",
+    "description": "Compact turf irrigation pump for smaller systems.",
+    "impeller_diameter_mm": 178,
+    "rpm": 3450,
+    "curves": {
+      "head": { "a": 52.0, "b": -0.35, "c": -0.012 },
+      "bep": { "q_bep": 30, "eff_bep": 68, "shape_factor": 0.42 }
+    },
+    "limits": { "max_flow_m3h": 45, "max_head_m": 52, "min_flow_m3h": 8 },
+    "image": "https://www.rainbird.com/sites/default/files/media/images/products/pumps/R50.png",
+    "catalog_link": "https://www.rainbird.com/products/pumps"
+  },
+  {
+    "id": "rain-r100-008",
+    "brand": "Rainbird",
+    "model": "R100-10HP (Turf Pump)",
+    "description": "Medium turf irrigation pump with variable speed option.",
+    "impeller_diameter_mm": 203,
+    "rpm": 3450,
+    "curves": {
+      "head": { "a": 62.0, "b": -0.22, "c": -0.008 },
+      "bep": { "q_bep": 46, "eff_bep": 70, "shape_factor": 0.40 }
+    },
+    "limits": { "max_flow_m3h": 70, "max_head_m": 62, "min_flow_m3h": 12 },
+    "image": "https://www.rainbird.com/sites/default/files/media/images/products/pumps/R100.png",
+    "catalog_link": "https://www.rainbird.com/products/pumps"
+  },
+  {
+    "id": "ksbeta-150-009",
+    "brand": "KSB",
+    "model": "Etanorm 150-200 (Industrial)",
+    "description": "Heavy-duty industrial centrifugal pump for large agricultural systems.",
+    "impeller_diameter_mm": 200,
+    "rpm": 1450,
+    "curves": {
+      "head": { "a": 58.0, "b": -0.012, "c": -0.00008 },
+      "bep": { "q_bep": 320, "eff_bep": 82, "shape_factor": 0.30 }
+    },
+    "limits": { "max_flow_m3h": 450, "max_head_m": 58, "min_flow_m3h": 100 },
+    "image": "https://www.ksb.com/blob/52858/etanorm-pump-end-suction.jpg",
+    "catalog_link": "https://www.ksb.com/en-global/products/pumps/centrifugal-pumps/etanorm"
+  },
+  {
+    "id": "ksbeta-200-010",
+    "brand": "KSB",
+    "model": "Etanorm 200-250 (Industrial)",
+    "description": "Extra-large capacity industrial pump for major irrigation schemes.",
+    "impeller_diameter_mm": 250,
+    "rpm": 1450,
+    "curves": {
+      "head": { "a": 65.0, "b": -0.008, "c": -0.00005 },
+      "bep": { "q_bep": 420, "eff_bep": 84, "shape_factor": 0.28 }
+    },
+    "limits": { "max_flow_m3h": 600, "max_head_m": 65, "min_flow_m3h": 150 },
+    "image": "https://www.ksb.com/blob/52858/etanorm-pump-end-suction.jpg",
+    "catalog_link": "https://www.ksb.com/en-global/products/pumps/centrifugal-pumps/etanorm"
+  },
+  {
+    "id": "wilo-atmos-011",
+    "brand": "Wilo",
+    "model": "Atmos GIGA-N 150/250 (Split Case)",
+    "description": "Split-case pump for high-flow municipal and agricultural applications.",
+    "impeller_diameter_mm": 267,
+    "rpm": 1480,
+    "curves": {
+      "head": { "a": 72.0, "b": -0.015, "c": -0.00007 },
+      "bep": { "q_bep": 385, "eff_bep": 83, "shape_factor": 0.30 }
+    },
+    "limits": { "max_flow_m3h": 550, "max_head_m": 72, "min_flow_m3h": 120 },
+    "image": "https://wilo.com/images/atmos-giga-n.png",
+    "catalog_link": "https://wilo.com/en/Products-and-expertise/Building-Services/Pumps/Split-case-pumps"
+  },
+  {
+    "id": "wilo-atmos-012",
+    "brand": "Wilo",
+    "model": "Atmos GIGA-N 200/315 (Split Case)",
+    "description": "Large split-case pump for major irrigation infrastructure.",
+    "impeller_diameter_mm": 315,
+    "rpm": 1480,
+    "curves": {
+      "head": { "a": 80.0, "b": -0.010, "c": -0.00004 },
+      "bep": { "q_bep": 560, "eff_bep": 85, "shape_factor": 0.28 }
+    },
+    "limits": { "max_flow_m3h": 800, "max_head_m": 80, "min_flow_m3h": 200 },
+    "image": "https://wilo.com/images/atmos-giga-n.png",
+    "catalog_link": "https://wilo.com/en/Products-and-expertise/Building-Services/Pumps/Split-case-pumps"
+  },
+  {
+    "id": "flygt-np-013",
+    "brand": "Flygt (Xylem)",
+    "model": "NP 3301 (Submersible)",
+    "description": "Heavy-duty submersible pump for borehole and flood irrigation.",
+    "impeller_diameter_mm": 280,
+    "rpm": 1450,
+    "curves": {
+      "head": { "a": 95.0, "b": -0.04, "c": -0.0002 },
+      "bep": { "q_bep": 280, "eff_bep": 78, "shape_factor": 0.33 }
+    },
+    "limits": { "max_flow_m3h": 400, "max_head_m": 95, "min_flow_m3h": 80 },
+    "image": "https://www.xylem.com/siteassets/brand/flygt/np-pump.png",
+    "catalog_link": "https://www.xylem.com/en-us/brands/flygt/"
+  },
+  {
+    "id": "grun-sp160-014",
+    "brand": "Grundfos",
+    "model": "SP 160-3 (Submersible)",
+    "description": "High-capacity submersible borehole pump.",
+    "impeller_diameter_mm": "N/A",
+    "rpm": 2900,
+    "curves": {
+      "head": { "a": 85.0, "b": -0.05, "c": -0.00025 },
+      "bep": { "q_bep": 245, "eff_bep": 77, "shape_factor": 0.34 }
+    },
+    "limits": { "max_flow_m3h": 350, "max_head_m": 85, "min_flow_m3h": 70 },
+    "image": "https://product-selection.grundfos.com/assets/images/products/sp/sp-160.jpg",
+    "catalog_link": "https://product-selection.grundfos.com/us"
+  },
+  {
+    "id": "brk-b6tprm-015",
+    "brand": "Berkeley",
+    "model": "B6TPRM (Turbine)",
+    "description": "Vertical turbine pump for deep well irrigation.",
+    "impeller_diameter_mm": 305,
+    "rpm": 1770,
+    "curves": {
+      "head": { "a": 78.0, "b": -0.025, "c": -0.00012 },
+      "bep": { "q_bep": 265, "eff_bep": 79, "shape_factor": 0.32 }
+    },
+    "limits": { "max_flow_m3h": 380, "max_head_m": 78, "min_flow_m3h": 90 },
+    "image": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/berkeley-turbine.png",
+    "catalog_link": "https://www.pentair.com/en-us/products/business-industry/water-supply-disposal/pumps/berkeley-turbine.html"
+  },
+  {
+    "id": "corn-8hh-016",
+    "brand": "Cornell",
+    "model": "8HH (High Head)",
+    "description": "High-head horizontal split case for long distance conveyance.",
+    "impeller_diameter_mm": 356,
+    "rpm": 1780,
+    "curves": {
+      "head": { "a": 92.0, "b": -0.02, "c": -0.00009 },
+      "bep": { "q_bep": 350, "eff_bep": 82, "shape_factor": 0.30 }
+    },
+    "limits": { "max_flow_m3h": 500, "max_head_m": 92, "min_flow_m3h": 100 },
+    "image": "https://www.cornellpump.com/wp-content/uploads/2020/05/8HH.png",
+    "catalog_link": "https://www.cornellpump.com/products/clear-liquid-pumps/"
+  },
+  {
+    "id": "ksb-etanorm-digitized-017",
+    "brand": "KSB",
+    "model": "Etanorm 65-200 (DIGITIZED)",
+    "description": "Digitized from actual manufacturer curve - 220mm impeller. This pump has accurate efficiency data from catalog.",
+    "impeller_diameter_mm": 220,
+    "rpm": 1450,
+    "curves": {
+      "head": { "a": 45.0, "b": -0.01, "c": -0.00015 },
+      "bep": { "q_bep": 200, "eff_bep": 72.5, "shape_factor": 0.35 },
+      "digitized": {
+        "source": "KSB Etanorm Catalog - 220mm Impeller @ 1450 RPM",
+        "impeller_diameter_mm": 220,
+        "flow_points": [0, 50, 100, 150, 200, 250, 300, 350, 400],
+        "head_points": [45, 43, 40, 36, 31, 25, 18, 10, 0],
+        "eff_flow_points": [50, 100, 150, 175, 200, 225, 250, 300, 350],
+        "eff_points": [40, 58, 68, 71, 72.5, 72, 70, 65, 55]
+      }
+    },
+    "limits": { "max_flow_m3h": 400, "max_head_m": 45, "min_flow_m3h": 50 },
+    "image": "https://www.ksb.com/blob/52858/etanorm-pump-end-suction.jpg",
+    "catalog_link": "https://www.ksb.com/en-global/products/pumps/centrifugal-pumps/etanorm"
+  }
+]

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying SoftwareX article."
+title: "Sprinkler Irrigation Design: an open-source Streamlit application for end-to-end pressurised-irrigation design"
+type: software
+authors:
+  - given-names: "TODO"
+    family-names: "TODO"
+    affiliation: "TODO"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+license: MIT
+repository-code: "https://github.com/TODO/sprinkler-design-softwarex"
+keywords:
+  - irrigation
+  - sprinkler
+  - hydraulic design
+  - open-source
+  - streamlit
+  - decision-support
+preferred-citation:
+  type: article
+  title: "TODO — paper title"
+  authors:
+    - given-names: "TODO"
+      family-names: "TODO"
+  journal: "SoftwareX"
+  year: 2026
+  doi: "TODO"
