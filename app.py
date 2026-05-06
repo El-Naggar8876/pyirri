@@ -1,5 +1,5 @@
 """
-Sprinkler Irrigation Design — open-access edition for SoftwareX.
+PyIrri — sprinkler system design (open-source web application).
 
 This entry-point exposes the sprinkler design workflow as a single Streamlit
 application.  No login or user management is required: the app opens directly
@@ -34,7 +34,7 @@ from modules import (
 # Page configuration
 # ---------------------------------------------------------------------------
 st.set_page_config(
-    page_title="Sprinkler Irrigation Design",
+    page_title="PyIrri — Sprinkler System Design",
     page_icon="💧",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -131,10 +131,10 @@ def _sidebar() -> str:
         <div style="text-align:center;padding:1rem 0;">
             <div style="font-size:2rem;">💧</div>
             <div style="font-size:1.05rem;font-weight:700;color:#4da6ff;letter-spacing:1px;">
-                SPRINKLER DESIGN
+                PY-IRRI v.01
             </div>
             <div style="font-size:0.7rem;color:#6c757d;letter-spacing:2px;">
-                SoftwareX Edition
+                Sprinkler System Design
             </div>
         </div>
         <hr/>

@@ -1,5 +1,5 @@
 """
-Modules for Sprinkler Irrigation Design Application (SoftwareX edition).
+Modules for PyIrri — sprinkler system design application.
 
 Each submodule is imported defensively so that an environment-specific failure
 in one component (e.g. missing optional GIS dependency) does not prevent the

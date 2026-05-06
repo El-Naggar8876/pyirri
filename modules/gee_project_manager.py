@@ -1,5 +1,5 @@
 """
-Google Earth Engine project storage (SoftwareX edition).
+Google Earth Engine project storage for PyIrri.
 
 This module persists and retrieves irrigation project documents as
 ``ee.FeatureCollection`` assets in Google Earth Engine.  It is intentionally

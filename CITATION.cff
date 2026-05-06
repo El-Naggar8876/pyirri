@@ -1,27 +1,34 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the accompanying SoftwareX article."
-title: "Sprinkler Irrigation Design: an open-source Streamlit application for end-to-end pressurised-irrigation design"
+title: "PyIrri — an open-source web application for the design of solid-set sprinkler irrigation systems"
 type: software
+version: "1.0.1"
+date-released: "2026-05-06"
 authors:
-  - given-names: "TODO"
-    family-names: "TODO"
-    affiliation: "TODO"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - given-names: "A.G."
+    family-names: "El-Naggar"
+    affiliation: "Land and Water Management Department, IHE Delft Institute for Water Education, Delft, The Netherlands"
+    orcid: "https://orcid.org/0000-0003-3487-5326"
+    email: "a.elnaggar@un-ihe.org"
 license: MIT
-repository-code: "https://github.com/TODO/sprinkler-design-softwarex"
+repository-code: "https://github.com/El-Naggar8876/pyirri"
+url: "https://sprinkler-system-design.streamlit.app/"
 keywords:
   - irrigation
   - sprinkler
   - hydraulic design
+  - FAO-56
+  - evapotranspiration
   - open-source
   - streamlit
   - decision-support
 preferred-citation:
   type: article
-  title: "TODO — paper title"
+  title: "PyIrri: an open-source decision-support tool for the design of solid-set sprinkler irrigation systems"
   authors:
-    - given-names: "TODO"
-      family-names: "TODO"
+    - given-names: "A.G."
+      family-names: "El-Naggar"
+      affiliation: "Land and Water Management Department, IHE Delft Institute for Water Education, Delft, The Netherlands"
+      orcid: "https://orcid.org/0000-0003-3487-5326"
   journal: "SoftwareX"
   year: 2026
-  doi: "TODO"

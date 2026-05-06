@@ -1,4 +1,4 @@
-# Sprinkler Irrigation Design
+# PyIrri — Sprinkler System Design
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
@@ -6,32 +6,44 @@
 
 > Open-source companion software to a SoftwareX article.
 > An end-to-end, browser-based decision-support tool for the design of
-> pressurised sprinkler irrigation systems.
+> pressurised solid-set sprinkler irrigation systems.
+
+**Live web application (no installation required):**
+👉 <https://sprinkler-system-design.streamlit.app/>
 
 ## Features
 
 - Reference and crop evapotranspiration following FAO-56 (Penman–Monteith).
 - Sprinkler selection from a parameterised catalogue with overlap and
   uniformity diagnostics.
-- Operational-design module (set time, number of sets, application rate).
-- Interactive pipe-network layout on a graph-paper canvas with snapping,
-  angle and length constraints.
-- Hydraulic design with Hazen–Williams / Darcy–Weisbach friction losses,
-  per-segment pipe sizing, and head-loss propagation.
-- Pump selection and duty-point matching against a pump database.
-- Bill of quantities and cost estimation.
+- Operational design module (irrigation interval, set time, application rate,
+  automatic field subdivision into subplots).
+- Interactive pipe-network layout on a graph-paper canvas with grid snapping,
+  angle and length constraints, and automatic valve placement.
+- Hydraulic design with Hazen–Williams friction losses, Christiansen
+  multi-outlet F-factor correction, per-segment pipe sizing and head-loss
+  propagation.
+- Pump selection and duty-point matching against an editable pump database.
+- Automatic Bill-of-Quantities aggregation and cost estimation.
 - DXF / Excel / PDF report export.
 - Optional cloud project storage via Google Earth Engine assets.
 
-## Quick start
+## Documentation
 
-### Local
+A complete user manual covering every module, with screenshots and an
+engineering-formula appendix, is provided as **Supplementary Data S4** of the
+SoftwareX article (50 tables, 12 sections + 4 appendices).
+
+## Quick start (local installation)
 
 ```bash
-git clone https://github.com/TODO/sprinkler-design-softwarex.git
-cd sprinkler-design-softwarex
+git clone https://github.com/El-Naggar8876/pyirri.git
+cd pyirri
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1   # Windows PowerShell
+# Windows PowerShell:
+.\.venv\Scripts\Activate.ps1
+# macOS / Linux:
+# source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
 ```
@@ -42,21 +54,22 @@ No login is required.
 ### Docker
 
 ```bash
-docker build -t sprinkler-design-softwarex .
-docker run --rm -p 8501:8501 sprinkler-design-softwarex
+docker build -t pyirri .
+docker run --rm -p 8501:8501 pyirri
 ```
 
 ## Optional: Google Earth Engine cloud storage
 
-Project documents can be persisted to Google Earth Engine assets under
-`projects/<project>/assets/SprinklerDesignSoftwareX`.  This feature is fully
-optional — the application runs without it.
+Project documents can optionally be persisted to Google Earth Engine assets.
+The application runs without this feature.
+
+To enable it, **each user must supply their own Google Cloud credentials**:
 
 1. Create a Google Cloud project and a service account with the
    *Earth Engine Resource Admin* role.
-2. Enable the Earth Engine API.
+2. Enable the Earth Engine API for that project.
 3. Copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and
-   paste the project id, service-account email and PEM private key.
+   paste your own project id, service-account email and PEM private key.
 4. Restart the application.
 
 Credentials are **never** committed: the populated `secrets.toml` is
@@ -70,8 +83,7 @@ git-ignored.
 ├── modules/              # Engineering and UI modules
 ├── components/           # Reusable UI helpers
 ├── config/               # Theme and runtime configuration
-├── sample_data/          # Example inputs reproducing the figures
-├── docs/                 # Methods notes and figure briefs
+├── pump_database_seed.json
 ├── requirements.txt
 ├── Dockerfile
 ├── CITATION.cff
@@ -79,18 +91,28 @@ git-ignored.
 └── README.md
 ```
 
-## Reproducing the figures in the paper
+## Reproducing the SoftwareX case study
 
-The `sample_data/` folder contains an example project (climate, crop,
-sprinkler catalogue, field geometry) that reproduces every numerical figure
-reported in the SoftwareX article.  See [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
+The illustrative wheat case study reported in Section 4 of the SoftwareX
+article can be reproduced from the project-state snapshot supplied as
+**Supplementary Data S1** (`Supplementary_Data_S1_PyIrri_CaseStudy_Wheat.json`).
+Step-by-step instructions are given in **Supplementary Data S2**
+(*Reproduction Guide*) and an independent FAO-56 hand calculation that
+validates the principal water-balance numbers is provided as
+**Supplementary Data S3**.
 
 ## How to cite
 
 If you use this software in academic work, please cite the SoftwareX article
-listed in [CITATION.cff](CITATION.cff).  After acceptance, this README will
-display a Zenodo DOI badge minted from the GitHub Release.
+listed in [CITATION.cff](CITATION.cff). The Zenodo DOI badge minted from the
+first GitHub Release will be added here on submission.
 
 ## License
 
 Released under the [MIT License](LICENSE).
+
+## Contact
+
+A.G. El-Naggar — <a.elnaggar@un-ihe.org>
+Land and Water Management Department, IHE Delft Institute for Water Education,
+Delft, The Netherlands.
