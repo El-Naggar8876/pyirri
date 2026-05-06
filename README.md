@@ -1,5 +1,6 @@
 # PyIrri — Sprinkler System Design
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20052019.svg)](https://doi.org/10.5281/zenodo.20052019)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/built%20with-Streamlit-ff4b4b.svg)](https://streamlit.io)
@@ -102,9 +103,12 @@ validates the principal water-balance numbers is provided as
 **Supplementary Data S3**.
 
 ## How to cite
+both the SoftwareX
+article (see [CITATION.cff](CITATION.cff)) and the archived software release:
 
-If you use this software in academic work, please cite the SoftwareX article
-listed in [CITATION.cff](CITATION.cff). The Zenodo DOI badge minted from the
+> El-Naggar, A.G. (2026). *PyIrri — an open-source web application for the
+> design of solid-set sprinkler irrigation systems* (v1.0.1). Zenodo.
+> <https://doi.org/10.5281/zenodo.20052019> badge minted from the
 first GitHub Release will be added here on submission.
 
 ## License
