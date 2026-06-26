@@ -1,4 +1,4 @@
-# PyIrri — Sprinkler System Design
+# OpenIrri — Sprinkler System Design
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20052019.svg)](https://doi.org/10.5281/zenodo.20052019)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
