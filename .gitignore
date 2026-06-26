@@ -45,3 +45,13 @@ config/user_projects.json
 exports/
 outputs/
 logs/
+
+# EPANET / WNTR solver temp files (never commit)
+temp.bin
+temp.inp
+temp.rpt
+*.rpt
+en??????
+validation/benchmark_results.csv
+.pytest_cache/
+.coverage

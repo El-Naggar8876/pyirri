@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite both the accompanying SoftwareX article and this archived software release."
-title: "PyIrri — an open-source web application for the design of solid-set sprinkler irrigation systems"
+title: "OpenIrri — an open-source web application for the design of solid-set sprinkler irrigation systems"
 type: software
-version: "1.0.1"
-date-released: "2026-05-06"
+version: "1.0.2"
+date-released: "2026-06-09"
 doi: "10.5281/zenodo.20052019"
 identifiers:
   - type: doi
@@ -29,7 +29,7 @@ keywords:
   - decision-support
 preferred-citation:
   type: article
-  title: "PyIrri: an open-source decision-support tool for the design of solid-set sprinkler irrigation systems"
+  title: "OpenIrri: an open-source decision-support tool for the design of solid-set sprinkler irrigation systems"
   authors:
     - given-names: "A.G."
       family-names: "El-Naggar"

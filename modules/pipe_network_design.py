@@ -14,6 +14,12 @@ from shapely.geometry import Polygon, LineString, Point, MultiPoint
 from shapely.ops import unary_union
 from math import sqrt, atan2, cos, sin
 
+# Canonical engineering kernels (single source of truth, unit-tested in tests/).
+from modules.engineering_kernels import (
+    hazen_williams_headloss as _hw_headloss,
+    christiansen_f_factor as _f_factor,
+)
+
 # Import the plot creation function from pipe_network_layout
 from modules.pipe_network_layout import create_interactive_plot
 
@@ -242,34 +248,17 @@ def show():
 
 
 def calculate_f_factor(n_outlets):
-    """Calculate Christiansen F-factor for multiple outlets"""
-    if n_outlets <= 1:
-        return 1.0
-    m = 1.852  # Hazen-Williams exponent
-    F = (1 / (m + 1)) + (1 / (2 * n_outlets)) + sqrt(m - 1) / (6 * n_outlets**2)
-    return F
+    """Christiansen F-factor (delegates to engineering_kernels; unit-tested)."""
+    return _f_factor(n_outlets)
 
 
 def calculate_hazen_williams(Q_m3h, D_mm, L_m, C=130):
+    """Hazen-Williams head loss in metres.
+
+    Delegates to engineering_kernels.hazen_williams_headloss (single source of
+    truth, exercised directly by the regression tests in tests/).
     """
-    Calculate friction loss using Hazen-Williams equation
-    Q_m3h: Flow rate in m³/h
-    D_mm: Internal diameter in mm
-    L_m: Length in meters
-    C: Hazen-Williams coefficient (default 130 for PVC)
-    Returns: Head loss in meters
-    """
-    if Q_m3h == 0 or D_mm == 0:
-        return 0
-    
-    Q_m3s = Q_m3h / 3600  # Convert to m³/s (NOT L/s!)
-    D_m = D_mm / 1000  # Convert to meters
-    
-    # Hazen-Williams: hf = 10.67 * L * Q^1.852 / (C^1.852 * D^4.87)
-    # Q must be in m³/s, D must be in meters
-    hf = 10.67 * L_m * (Q_m3s ** 1.852) / ((C ** 1.852) * (D_m ** 4.87))
-    
-    return hf
+    return _hw_headloss(Q_m3h, D_mm, L_m, C)
 
 
 def get_standard_pipe_sizes():

@@ -1,4 +1,4 @@
-# PyIrri — Sprinkler System Design
+# OpenIrri — Sprinkler System Design
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20052019.svg)](https://doi.org/10.5281/zenodo.20052019)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -96,20 +96,34 @@ git-ignored.
 
 The illustrative wheat case study reported in Section 4 of the SoftwareX
 article can be reproduced from the project-state snapshot supplied as
-**Supplementary Data S1** (`Supplementary_Data_S1_PyIrri_CaseStudy_Wheat.json`).
+**Supplementary Data S1** (`Supplementary_Data_S1_OpenIrri_CaseStudy_Wheat.json`).
 Step-by-step instructions are given in **Supplementary Data S2**
 (*Reproduction Guide*) and an independent FAO-56 hand calculation that
 validates the principal water-balance numbers is provided as
 **Supplementary Data S3**.
 
 ## How to cite
-both the SoftwareX
-article (see [CITATION.cff](CITATION.cff)) and the archived software release:
 
-> El-Naggar, A.G. (2026). *PyIrri — an open-source web application for the
-> design of solid-set sprinkler irrigation systems* (v1.0.1). Zenodo.
-> <https://doi.org/10.5281/zenodo.20052019> badge minted from the
-first GitHub Release will be added here on submission.
+Please cite both the SoftwareX article and the archived software release
+(see [CITATION.cff](CITATION.cff)):
+
+> El-Naggar, A.G. (2026). *OpenIrri: an open-source Python platform for solid-set
+> sprinkler irrigation system design.* SoftwareX (in review).
+
+> El-Naggar, A.G. (2026). *OpenIrri — an open-source web application for the
+> design of solid-set sprinkler irrigation systems* (v1.0.2). Zenodo.
+> <https://doi.org/10.5281/zenodo.20052019>
+
+## Testing and validation
+
+```bash
+pip install -r requirements.txt -r requirements-dev.txt
+pytest tests/ --cov=modules                  # regression & edge-case tests
+python validation/hydraulic_benchmark.py     # EPANET 2.2 cross-check
+```
+
+The hydraulic engine is cross-checked against the official US-EPA EPANET 2.2
+solver; see [`validation/`](validation/) and [`ARCHITECTURE.md`](ARCHITECTURE.md).
 
 ## License
 
