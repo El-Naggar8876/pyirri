@@ -4,10 +4,10 @@ title: "OpenIrri — an open-source web application for the design of solid-set 
 type: software
 version: "1.0.2"
 date-released: "2026-06-09"
-doi: "10.5281/zenodo.20052019"
+doi: "10.5281/zenodo.20925592"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.20052019"
+    value: "10.5281/zenodo.20925592"
     description: "Zenodo archive of v1.0.1"
 authors:
   - given-names: "A.G."
@@ -16,7 +16,7 @@ authors:
     orcid: "https://orcid.org/0000-0003-3487-5326"
     email: "a.elnaggar@un-ihe.org"
 license: MIT
-repository-code: "https://github.com/El-Naggar8876/pyirri"
+repository-code: "https://github.com/El-Naggar8876/openirri"
 url: "https://sprinkler-system-design.streamlit.app/"
 keywords:
   - irrigation

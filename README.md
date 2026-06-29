@@ -1,6 +1,6 @@
 # OpenIrri — Sprinkler System Design
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20052019.svg)](https://doi.org/10.5281/zenodo.20052019)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20925592.svg)](https://doi.org/10.5281/zenodo.20925592)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/built%20with-Streamlit-ff4b4b.svg)](https://streamlit.io)
@@ -38,8 +38,8 @@ SoftwareX article (50 tables, 12 sections + 4 appendices).
 ## Quick start (local installation)
 
 ```bash
-git clone https://github.com/El-Naggar8876/pyirri.git
-cd pyirri
+git clone https://github.com/El-Naggar8876/openirri.git
+cd openirri
 python -m venv .venv
 # Windows PowerShell:
 .\.venv\Scripts\Activate.ps1
@@ -55,8 +55,8 @@ No login is required.
 ### Docker
 
 ```bash
-docker build -t pyirri .
-docker run --rm -p 8501:8501 pyirri
+docker build -t openirri .
+docker run --rm -p 8501:8501 openirri
 ```
 
 ## Optional: Google Earth Engine cloud storage
@@ -112,7 +112,7 @@ Please cite both the SoftwareX article and the archived software release
 
 > El-Naggar, A.G. (2026). *OpenIrri — an open-source web application for the
 > design of solid-set sprinkler irrigation systems* (v1.0.2). Zenodo.
-> <https://doi.org/10.5281/zenodo.20052019>
+> <https://doi.org/10.5281/zenodo.20925592>
 
 ## Testing and validation
 
